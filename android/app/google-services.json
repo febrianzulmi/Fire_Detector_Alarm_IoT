@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1065441870202",
+    "project_id": "fire-detector-f6203",
+    "storage_bucket": "fire-detector-f6203.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065441870202:android:b2a341b109424e785e56c3",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_project_fire_alarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065441870202-h1ijkmbascvsh6n37lkai9uldk8sh981.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXj--V85IoRiee4c1EQ93qBXejorscHs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065441870202-h1ijkmbascvsh6n37lkai9uldk8sh981.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
