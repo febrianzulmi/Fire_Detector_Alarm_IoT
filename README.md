@@ -1,6 +1,6 @@
 # flutter_application_project_fire_alarm
 
-A new Flutter project.
+Sebuah project fire detector 3 in 1 menggunakan Flutter dan ESP32 melalui komunikasi MQTT
 
 ## Getting Started
 
