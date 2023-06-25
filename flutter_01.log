@@ -1,0 +1,100 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --quiet assemble --no-version-check --depfile D:\Flutter Project\flutter_application_project_fire_alarm\build\app\intermediates\flutter\debug/flutter_build.d --output D:\Flutter Project\flutter_application_project_fire_alarm\build\app\intermediates\flutter\debug -dTargetFile=D:\Flutter Project\flutter_application_project_fire_alarm\lib\main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true --DartDefines=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC8yYTM0MDFjOWJiYjVhOWE5YWVjNzRkNGY3MzVkMThhOWRkM2ViZjJkLw== debug_android_application
+
+## exception
+
+PathNotFoundException: PathNotFoundException: Creation failed, path = 'D:\' (OS Error: The system cannot find the path specified.
+, errno = 3)
+
+```
+#0      _Directory.createSync (dart:io/directory_impl.dart:129:7)
+#1      _Directory.createSync (dart:io/directory_impl.dart:124:16)
+#2      _Directory.createSync (dart:io/directory_impl.dart:124:16)
+#3      _Directory.createSync (dart:io/directory_impl.dart:124:16)
+#4      _Directory.createSync (dart:io/directory_impl.dart:124:16)
+#5      _Directory.createSync (dart:io/directory_impl.dart:124:16)
+#6      _File.createSync (dart:io/file_impl.dart:303:14)
+#7      ForwardingFile.createSync (package:file/src/forwarding/forwarding_file.dart:26:16)
+#8      ErrorHandlingFile.createSync.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:283:22)
+#9      _runSync (package:flutter_tools/src/base/error_handling_io.dart:590:14)
+#10     ErrorHandlingFile.createSync (package:flutter_tools/src/base/error_handling_io.dart:282:5)
+#11     FileStore.persist (package:flutter_tools/src/build_system/file_store.dart:155:18)
+#12     FlutterBuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:617:17)
+<asynchronous suspension>
+#13     AssembleCommand.runCommand (package:flutter_tools/src/commands/assemble.dart:315:32)
+<asynchronous suspension>
+#14     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1336:27)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#16     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#17     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:296:9)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#19     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:244:5)
+<asynchronous suspension>
+#20     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:91:9)
+<asynchronous suspension>
+#21     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#22     main (package:flutter_tools/executable.dart:91:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.10.4, on Microsoft Windows [Version 10.0.22621.1778], locale en-ID)
+    • Flutter version 3.10.4 on channel stable at D:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 682aa387cf (6 days ago), 2023-06-05 18:04:56 -0500
+    • Engine revision 2a3401c9bb
+    • Dart version 3.0.3
+    • DevTools version 2.23.1
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 33.0.2)
+    • Android SDK at C:\Users\Febrian Zulmi\AppData\Local\Android\sdk
+    • Platform android-33, build-tools 33.0.2
+    • Java binary at: D:\Android Studio\jbr\bin\java
+    • Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-9586694)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop for Windows (Visual Studio Community 2022 17.5.0)
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.5.33414.496
+    • Windows 10 SDK version 10.0.22000.0
+
+[✓] Android Studio (version 2022.2)
+    • Android Studio at D:\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-9586694)
+
+[✓] VS Code (version 1.79.0)
+    • VS Code at C:\Users\Febrian Zulmi\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.66.0
+
+[✓] Connected device (4 available)
+    • sdk gphone x86 64 (mobile) • emulator-5554 • android-x64    • Android 13 (API 33) (emulator)
+    • Windows (desktop)          • windows       • windows-x64    • Microsoft Windows [Version 10.0.22621.1778]
+    • Chrome (web)               • chrome        • web-javascript • Google Chrome 114.0.5735.110
+    • Edge (web)                 • edge          • web-javascript • Microsoft Edge 114.0.1823.43
+
+[✓] Network resources
+    • All expected network resources are available.
+
+• No issues found!
+```
