@@ -49,7 +49,7 @@ class _FireAlarmPageState extends State<FireAlarmPage> {
   }
 
   void connectToBroker() async {
-    client = MqttServerClient.withPort('159.223.61.133', 'ClientID', 1883);
+    client = MqttServerClient.withPort('', 'ClientID', 1883);
     client!.logging(on: true);
     client!.keepAlivePeriod = 20;
     client!.onConnected = onConnected;
@@ -59,7 +59,7 @@ class _FireAlarmPageState extends State<FireAlarmPage> {
         .withClientIdentifier('ClientID')
         .keepAliveFor(20)
         .startClean()
-        .authenticateAs('mecharoot', 'mecharnd595');
+        .authenticateAs('', '');
     client!.connectionMessage = connMessage;
 
     try {
